@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion des Menus selon la largeur du support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet/less" type="text/css" href="css/main.less">
+</head>
+<body>
+<nav>
+    <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+    <ul>
+        <li>
+            <a href="http://google.com">Menu 1</a>
+            <ul>
+                <li>
+                    <a href="http://google.com">Sous menu1</a>
+                    <ul>
+                        <li>
+                            <a href="http://google.com">Sous sous menu1</a>
+                            <ul>
+                                <li>
+                                    <a href="http://google.com">sous sous sous menu 1 </a>
+                                    <ul>
+                                        <li><a href="http://google.com">sous sous sous menu 1 </a></li>
+                                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://google.com">sous sous menu 1</a>
+                            <ul>
+                                <li><a href="http://google.com">sous sous sous menu 1 </a></li>
+                                <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://google.com">sous sous menu 1</a>
+                            <ul>
+                                <li>
+                                    <a href="http://google.com">sous sous sous menu 1 </a>
+                                    <ul>
+                                        <li><a href="http://google.com">sous sous sous menu 1 </a></li>
+                                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                                <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://google.com">sous menu 1</a>
+                    <ul>
+                        <li><a href="http://google.com">sous sous sous menu 1 </a></li>
+                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://google.com">sous menu 1</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://google.com">Menu 2</a>
+            <ul>
+                <li>
+                    <a href="http://google.com">sous menu 2</a>
+                    <ul>
+                        <li><a href="http://google.com">sous sous sous menu 1 </a></li>
+                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                        <li><a href="http://google.com">sous sous sous menu 1</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://google.com">sous menu 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="http://google.com">Menu 3</a>
+        </li>
+    </ul>
+</nav>
+<h1>Gestion des Menus selon la largeur du support </h1>
+<h2>Partie CSS</h2>
+<p>Dans la partie CSS je gère les menus, et <b>autant</b> de niveaux de sous menus possibles. <br/></p>
+<h2>Partie HTML</h2>
+<p>Pour ajouter un autre niveau il suffit de rajouter une liste après la balise <b>a</b> qui se trouve à l'intérieur <b>li</b>.
+    <br/> <b><span style="color:red">L'ordre est très important</span></b> sinon le script JS sera mal interprété.<br> <br>
+<b>Architecture :</b> <br>
+</p>
+<ul>
+    <li>
+        ul <i>premier niveau</i>
+        <ul>
+            <li>
+                li
+                <ul>
+                    <li>a <i>lien non terminal</i></li>
+                        ul <i>deuxième niveau</i>
+                        <ul>
+                            <li>a <i>lien terminal</i></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<p>De la même façon on construit le troisième niveau etc.</p>
+<h2>Partie JavaScript</h2>
+<p>Gère tout les menus et les sous menus qui existent.</p>
+<footer>
+    <p><b>Réalisation : Mohammed Amine BERRICHI </b></p>
+</footer>
+<script  type="text/javascript" src="js/less.min.js"></script>
+<script  type="text/javascript"src="js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
