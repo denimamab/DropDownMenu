@@ -1,5 +1,5 @@
 # DropDownMenu
-DropDownMenu is a responsive multi levels menu using jQuery & LESS. [Demo](https://maberrichi.com/DropDownMenu/)
+DropDownMenu is a responsive multi levels menu using jQuery & LESS. [Demo](https://denimamab.github.io/DropDownMenu/)
 
 
 #Gestion des Menus selon la largeur du support
