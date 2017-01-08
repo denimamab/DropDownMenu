@@ -6,13 +6,14 @@ DropDownMenu is a responsive multi levels menu using jQuery & LESS. [Demo](https
 
 ##Partie CSS
 
-Dans la partie CSS je gère les menus, et autant de niveaux de sous menus possibles. 
-Partie HTML
+Dans la partie CSS je gère les menus, et **autant** de niveaux de sous menus possibles. 
 
-Pour ajouter un autre niveau il suffit de rajouter une liste après la balise a qui se trouve à l'intérieur li. 
-L'ordre est très important sinon le script JS sera mal interprété.
+##Partie HTML
 
-##Architecture : 
+Pour ajouter un autre niveau il suffit de rajouter une liste après la balise **a** qui se trouve à l'intérieur **li**. 
+**L'ordre est très important** sinon le script JS sera mal interprété.
+
+###Architecture : 
 * **ul** premier niveau
   * **li**
     * **a** lien non terminal
